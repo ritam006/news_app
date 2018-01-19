@@ -6,15 +6,126 @@
     android:layout_height="match_parent"
     tools:context="com.example.ritam.myapplication.MainActivity">
 
-    <Button
+    <include layout="@layout/background_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:rowCount="3"
+        android:columnCount="2"
+        android:orientation="vertical">
+"
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/national"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                android:text="National"
+                android:background="#E53935"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/internanational"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                android:text="International"
+                android:background="#7CB342"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/sports"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                android:text="Sports"
+                android:background="#F4511E"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/business"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                android:text="Business"
+                android:background="#C0CA33"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/keyword"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                android:text="Keyword"
+                android:background="#FFB300"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/technology"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                android:text="Technology"
+                android:background="#D81B60"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+
+
+</LinearLayout>
+    <!-- <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="RETRIEVE"
         android:layout_marginLeft="100dp"
         android:layout_marginRight="100dp"
-        app:layout_constraintBottom_toBottomOf="@+id/horizontal_guideline"/>
-        <!-- app:layout_constraintBottom_toTopOf="@+id/vertical_guideline"-->
+        app:layout_constraintBottom_toBottomOf="@+id/horizontal_guideline"/> -->
 
     <android.support.constraint.Guideline
         android:layout_width="wrap_content"
