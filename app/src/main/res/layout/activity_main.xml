@@ -16,7 +16,7 @@
         android:rowCount="3"
         android:columnCount="2"
         android:orientation="vertical">
-"
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -34,11 +34,11 @@
                 android:layout_marginTop="40dp"
                 android:layout_marginBottom="40dp"
                 android:text="National"
-                android:background="#E53935"
+                android:background="@drawable/my_button_national"
                 android:textAllCaps="false"/>
 
             <Button
-                android:id="@+id/internanational"
+                android:id="@+id/health"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -46,8 +46,8 @@
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="40dp"
                 android:layout_marginBottom="40dp"
-                android:text="International"
-                android:background="#7CB342"
+                android:text="Health"
+                android:background="@drawable/my_button_international"
                 android:textAllCaps="false"/>
         </LinearLayout>
 
@@ -67,7 +67,7 @@
                 android:layout_marginTop="40dp"
                 android:layout_marginBottom="40dp"
                 android:text="Sports"
-                android:background="#F4511E"
+                android:background="@drawable/my_button_sports"
                 android:textAllCaps="false"/>
 
             <Button
@@ -80,7 +80,7 @@
                 android:layout_marginTop="40dp"
                 android:layout_marginBottom="40dp"
                 android:text="Business"
-                android:background="#C0CA33"
+                android:background="@drawable/my_button_business"
                 android:textAllCaps="false"/>
         </LinearLayout>
 
@@ -99,7 +99,7 @@
                 android:layout_marginTop="40dp"
                 android:layout_marginBottom="40dp"
                 android:text="Keyword"
-                android:background="#FFB300"
+                android:background="@drawable/my_button_keyword"
                 android:textAllCaps="false"/>
 
             <Button
@@ -112,7 +112,7 @@
                 android:layout_marginTop="40dp"
                 android:layout_marginBottom="40dp"
                 android:text="Technology"
-                android:background="#D81B60"
+                android:background="@drawable/my_button_technology"
                 android:textAllCaps="false"/>
         </LinearLayout>
 

@@ -15,12 +15,15 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import android.net.Uri;
+import android.widget.Toast;
 
+import java.net.URL;
 import java.util.ArrayList;
 
 public class NewsFeedActivity extends AppCompatActivity {
 
-    private static final String url ="https://newsapi.org/v2/top-headlines?country=in&apiKey=dafe84df59ff49b6ac60758549584cbd";
+    private String url ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +31,9 @@ public class NewsFeedActivity extends AppCompatActivity {
         final ArrayList<String> list=new ArrayList<>();
         final ArrayAdapter<String> adapter=new ArrayAdapter<String>(this,R.layout.list_entry,list);
         final ListView lv=findViewById(R.id.list);
+        Bundle bundle=getIntent().getExtras();
+        url=bundle.getString("url");
+        Toast.makeText(this,url,Toast.LENGTH_SHORT).show();
         RequestQueue queue= Volley.newRequestQueue(this);
         JsonObjectRequest jsObjRequest = new JsonObjectRequest
                 (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {

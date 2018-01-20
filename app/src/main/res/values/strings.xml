@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="Keyword_ok">Go</string>
+    <string name="Keyword_cancel">Cancel</string>
+    <string name="Dialog_message">Enter the search string</string>
+    <string name="title_activity_dialogue_activity">Dialogue_activity</string>
 </resources>
